@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;400&display=swap" 
+    rel="stylesheet">
+    <script src="script.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <main class="flex container">
+        <div class="addItemTolistWrapper">
+            <h1 class="addItemTolistWrapper__title">Добавление довара</h1>
+
+            <form class="addItemTolistWrapper__form" id="form">        
+                <ul class="addItemTolistWrapper__list">
+                    <li  
+                    class="addItemTolistWrapper__item" 
+                    id="addItemTolistWrapper__item__name">
+                        <label class="addItemTolistWrapper__label">
+                            Наименование товара <span class="elemntForlabel"></span>
+                        </label>
+        
+                        <input 
+                        class="input" 
+                        id="inputName" 
+                        type="text" 
+                        placeholder="Введите наименование товара"
+                        />
+                    </li>
+        
+                    <li 
+                    class="addItemTolistWrapper__item" 
+                    id="addItemTolistWrapper__item__description">
+                        <label class="addItemTolistWrapper__label">
+                            Описание товара <span class="elemntForlabel"></span>
+                        </label>
+        
+                        <input 
+                        class="input" 
+                        id="inputDescription" 
+                        type="text" 
+                        placeholder="Введите описание товара"
+                        />
+                    </li>
+        
+                    <li 
+                    class="addItemTolistWrapper__item" 
+                    id="addItemTolistWrapper__item__img">
+                        <label class="addItemTolistWrapper__label">
+                            Ссылка на изображение товара <span class="elemntForlabel"></span>
+                        </label> 
+        
+                        <input 
+                        class="input" 
+                        id="inputImg" 
+                        type="text" 
+                        placeholder="Введите ссылку"
+                        />
+                    </li>
+        
+                    <li 
+                    class="addItemTolistWrapper__item" 
+                    id="addItemTolistWrapper__item__price">
+                        <label class="addItemTolistWrapper__label">
+                            Цена товара <span class="elemntForlabel"></span>
+                        </label>
+        
+                        <input 
+                        class="input" 
+                        id="inputPrice" 
+                        type="number" 
+                        placeholder="Введите цену"
+                        />
+                    </li>
+                </ul>
+        
+                <input type="submit" class="btn" value="Добавить товар"/>
+            </form>
+        </div>
+    
+        <div id="todo-list"></div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,163 @@
+body {
+    background-color: #dfdeda8c;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.container {
+    width: 1380px;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul {
+  list-style: none; 
+  padding: 0; 
+}
+
+.input {
+    width: 268px;
+    padding: 10px 0 10px 16px;
+    border: none;
+    box-shadow:  0 2px 5px 0 #00000021;
+}
+
+.elemntForlabel {
+    width: 4px;
+    height: 4px;
+    background-color: #FF8484;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+}
+
+.addItemTolistWrapper {
+    width: 332px;
+    margin-right: 16px;
+}
+
+
+.addItemTolistWrapper__form {
+    position: fixed;
+    background-color: #fff;
+    border-radius: 4px;
+    padding: 24px;
+}
+
+.addItemTolistWrapper__title {
+    margin: 16px 0;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+
+
+.addItemTolistWrapper__item {
+    margin-bottom: 16px;
+}
+
+.addItemTolistWrapper__label {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 10px;
+    position: relative;
+}
+
+.btn {
+    display: block;
+    background-color: #EEEEEE;
+    color: #B4B4B4;
+    border-radius: 10px;
+    width: 284px;
+    padding: 10px 0;
+    border: none;
+    margin: 0 auto;
+}
+
+#todo-list {
+    width: 1028px;
+}
+
+
+
+
+
+.delete {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    width: 32px;
+    height: 32px;
+    border: none;
+    border-radius: 4px;
+    background-image: url("image/delete.png");
+    background-repeat: no-repeat;   
+    background-position: center;
+    background-color: #FF8484;
+    display: none;
+}
+.listWidthContent__item {
+    width: 332px;
+    padding-bottom: 24px;
+    background-color: #fff;
+    border-radius: 4px;
+    position: relative;
+    margin-bottom: 16px;
+}
+
+.listWidthContent__item:hover{
+    cursor: pointer;
+} 
+
+.listWidthContent__item:not(:nth-child(3n)) {
+    margin-right: 16px;
+}
+
+.listWidthContent__title {
+    margin: 16px 0;
+    padding: 0 16px 0  16px;
+}
+
+.listWidthContent__p {
+    margin-bottom: 32px;
+    padding: 0 16px 0  16px;
+
+}
+
+.listWidthContent__span {
+    padding: 0 16px 0  16px;
+}
+
+.listWidthContent__button-filter {
+    color: #B4B4B4;
+    size: 12px;
+    border-radius: 4px;
+    border: none;
+    padding: 10px 27px 10px 16px;
+    background-color: #fff;
+    background-image: url("image/errow.png");
+    background-repeat: no-repeat;
+    background-position: 115px;
+    display: block;
+    margin: 16px 0 16px auto;
+}
+
+#errorText {
+    color: red;
+    font-size: 8px;
+}
+
+::-webkit-input-placeholder {color:#B4B4B4;}
+::-moz-placeholder          {color:#B4B4B4;}/* Firefox 19+ */
+:-moz-placeholder           {color:#B4B4B4;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#B4B4B4;}
+
+.btn:hover {
+    cursor: pointer;
+    background-color: #7BAE73;
+    color: #fff;
+}
